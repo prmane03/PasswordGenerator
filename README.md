@@ -1,2 +1,3 @@
 # PasswordGenerator
-![Output](https://github.com/prmane03/PasswordGenerator/blob/main/image.jpg?raw=true)
+###Generates Random Password.
+![Output](https://github.com/prmane03/PasswordGenerator/blob/main/Preview.png?raw=true)
