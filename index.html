@@ -1,0 +1,48 @@
+<!DOCTYPE HTML> 
+<html> 
+
+<head> 
+	<title> 
+		PasswordGenerator
+	</title> 
+	<style>
+	button {
+		padding:5px;
+		color: rgb(60,120,216);
+		font-weight:bold;
+	}
+	</style>
+</head> 
+
+<body style="text-align:center;"> 
+	<h1 style="color: rgb(60,120,216)"> 
+	<img src="img/logo.jpg" height="30px" width="30px">
+		PasswordGenerator
+	</h1> 
+	<hr>
+	<h3> 
+		Click on the button to 
+		generate random password. 
+	</h3> 
+	Lowercase : <input type="checkbox" checked id="lowercase"><br>
+	UpperCase : <input type="checkbox" checked id="uppercase"><br>
+	Numbers : <input type="checkbox" checked id="numbers"><br>
+	Symbols : <input type="checkbox" checked id="symbols"><br>
+	Lenght : <input type="number" value="12" max="50" min="6" id="lenght" onchange="checkLen()" style="border:none"><br><br>
+	<button onclick="gfg_Run()"> 
+		Generate
+	</button> 
+	<button onclick="OnCopy()"> 
+			Copy			
+	 </button>
+	<br> 
+	<hr>
+	<div> 
+		<input id="newpass" readonly style="text-align:center;border:none"></input> 
+	</div> <br>
+	<progress min=0 max=120 id="progress"></progress>
+	<p id="passStrength"></p>
+	<script src="js/index.js"></script>
+</body> 
+
+</html> 
