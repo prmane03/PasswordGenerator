@@ -78,12 +78,20 @@ function scorePassword(pass) {
 function checkPassStrength(pass) {
     var score = scorePassword(pass);
     if (score > 80)
+	{
+		document.getElementById("newpass").style.color="green";
         return "strong";
+	}
     if (score > 60)
+	{
+		document.getElementById("newpass").style.color="orange";
         return "good";
-    if (score >= 30)
+	}
+    if (score >= 0)
+	{
+		document.getElementById("newpass").style.color="red";
         return "weak";
-
+	}
     return "";
 }
 function checkLen()

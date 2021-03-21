@@ -2,6 +2,8 @@
 <html> 
 
 <head> 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 	<title> 
 		PasswordGenerator
 	</title> 
@@ -9,6 +11,17 @@
 	button {
 		padding:5px;
 		color: rgb(60,120,216);
+		font-weight:bold;
+	}
+	.instructions{
+		border: 1px solid black;
+		margin:auto;
+		width:60%;
+		padding:10;
+	}
+	#newpass {
+		text-align:center;
+		border:none;
 		font-weight:bold;
 	}
 	</style>
@@ -38,10 +51,24 @@
 	<br> 
 	<hr>
 	<div> 
-		<input id="newpass" readonly style="text-align:center;border:none"></input> 
-	</div> <br>
+		<input id="newpass" readonly style=""></input> 
+	</div>
 	<progress min=0 max=120 id="progress"></progress>
 	<p id="passStrength"></p>
+	<hr>
+	<h3 style="color:red">Keep in Mind ...</h3>
+	<div class="instructions" style="text-align:start;justify-content:center">
+	<ul>
+	<li>Dont share your password with anyone.</li>
+	<li>Never write password anywhere.</li>
+	<li>To avoid hedache of remembering password use Trustable Password Manager.</li>
+	<li>Keep in mind remember Password in same way as you remember contact numbers or address.</li>
+	<li>e.g. You can remember randomly generated password <span style="color:green">'ikHg&CWNV@vu'</span> by breaking it as <span style="color:green"><u>ikHg</u> <u>&</u> <u>CWNV</u> <u>@</u> <u>vu</u></span> .</li>
+	<li>Remember 'P@$sw0rd' takes much time to crack than 'Password'</li>
+	</ul>
+	</div><br>
+	<img src="img/bruteforce.jpeg" style="box-shadow:-5px 5px #AAAAAA" alt="Time taken to crack password by BruteForce attack">
+	<hr>
 	<script src="js/index.js"></script>
 </body> 
 
